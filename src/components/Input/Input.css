@@ -1,0 +1,3 @@
+.radioChecked:checked + .radioLabelChecked {
+    background: turquoise;
+}

@@ -15,7 +15,7 @@ const LoginForm = () => {
   ]
 
   return (
-    <Input type="text" items={fields} />
+    <Input type="text" items={fields} submitFormText="Log In" showPassText="Show Password" />
   );
 };
 
