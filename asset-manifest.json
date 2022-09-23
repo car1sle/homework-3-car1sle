@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/homework-3-car1sle/static/css/main.f5e190e4.css",
+    "main.js": "/homework-3-car1sle/static/js/main.5275fdc3.js",
+    "index.html": "/homework-3-car1sle/index.html",
+    "main.f5e190e4.css.map": "/homework-3-car1sle/static/css/main.f5e190e4.css.map",
+    "main.5275fdc3.js.map": "/homework-3-car1sle/static/js/main.5275fdc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5e190e4.css",
+    "static/js/main.5275fdc3.js"
+  ]
+}
