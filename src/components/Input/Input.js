@@ -1,8 +1,9 @@
 import "./Input.css";
+import Button from "../Button/Button";
 
 const Input = ({type, category, items, submitFormText, showPassText}) => {
 
-  // TODO: Make global function, callable in any file
+  // TODO: Make global functions, callable in any file
   const capFirstLetter = (string => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   });
@@ -58,18 +59,7 @@ const Input = ({type, category, items, submitFormText, showPassText}) => {
       borderRadius: "3px",
     }
 
-    const submitButtonStyle = {
-      margin: "5px 0 0",
-      padding: "10px 18px",
-      border: "1px solid #b0b0b0",
-      borderRadius: "3px",
-      backgroundColor: "turquoise",
-      cursor: "pointer",
-      fontSize: "16px",
-    }
-
     const renderedFields = items.map(item => {
-
       return (
         <div key={item.id} style={fieldRowsStyle}>
           <label htmlFor={item.id} style={fieldsLabelStyle}>
@@ -90,7 +80,7 @@ const Input = ({type, category, items, submitFormText, showPassText}) => {
     return (
       <form>
         {renderedFields}
-        <button type="submit" style={submitButtonStyle}>{submitFormText}</button>
+        <Button text={submitFormText} type="submit" />
       </form>
     );
   };
